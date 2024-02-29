@@ -3,6 +3,10 @@
         font-size: 20px;
     }
 
+    .main-header {
+        height: auto;
+    }
+
     .main-hero-title h2 {
         font-size: 24px;
 
