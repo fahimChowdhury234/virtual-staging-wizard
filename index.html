@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- bootstrap link -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+         crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="./responsive.css" />
+      <title>Document</title>
+   </head>
+
+   <body>
+      <main>
+         <header class="main-header">
+            <nav class="navbar sticky-top navbar-expand-xl bg-white rounded-3 mt-3 text-brand container p-4">
+               <a class="navbar-brand text-brand" href="./index.html">
+                  <h2 class="text-logo">Virtual Staging Wizard</h2>
+               </a>
+               <button
+                  class="navbar-toggler bg-transparent text-black px-3 py-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#navbarOffcanvas"
+                  aria-controls="navbarOffcanvas"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+               >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="30px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+               </button>
+               <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <ul class="navbar-nav mb-2 mb-lg-0 gap-4 text-uppercase">
+                           <li class="nav-item">
+                              <a class="nav-link active" href="./index.html" target="_self" title="">Home</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="./index.html" target="_self" title=""> Gallery</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="./index.html" target="_self" title=""> Prices</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="./index.html" target="_self" title=""> Login</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </nav>
+            <div class="main-hero d-flex align-items-center">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="main-hero-title w-100 h-100 d-flex flex-column justify-content-center">
+                           <h2>Virtual Staging Wizard <span>with one click</span></h2>
+                           <p class="text-white-50">Upload a picture and our AI will add furniture within seconds</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="uploadbtn">
+                           <div class="mb-6">
+                              <div class="d-flex align-items-center justify-content-center w-100">
+                                 <label for="dropzone-file" class="dropzone-file">
+                                    <div class="text-center text-black-50">
+                                       <svg class="" aria-hidden="true" width="70" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                                          <path
+                                             stroke="currentColor"
+                                             stroke-linecap="round"
+                                             stroke-linejoin="round"
+                                             stroke-width="2"
+                                             d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                                          />
+                                       </svg>
+                                       <p class="mt-3">Upload image of a room</p>
+                                    </div>
+                                    <input type="file" class="opacity-0" id="pdf" name="pdf" required />
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <section class="result-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>our project Results</h2>
+                  <p>
+                     Describe that visitors will discover success stories, case studies, or <br />
+                     examples of projects that have delivered significant results or made a positive impact.
+                  </p>
+               </div>
+               <div class="row">
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/image-asset.png" alt="" />
+                     </figure>
+                  </div>
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/LJID+Website+Portfolio+Vertical+Image+Layout+Vercolen+Bathroom.png" alt="" />
+                     </figure>
+                  </div>
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/image-asset (1).png" alt="" />
+                     </figure>
+                  </div>
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/image-asset (2).png" alt="" />
+                     </figure>
+                  </div>
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/LJID+Website+Portfolio+Horizontal+Image+Layout+Passarelli+Dining+Room.png" alt="" />
+                     </figure>
+                  </div>
+                  <div class="col-md-4">
+                     <figure class="result-img">
+                        <img src="./assets/img/LJID+Website+Portfolio+Horiz+Morris+Kitchen+with+stools+sept+2016.png" alt="" />
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="why-choose-us-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>Why choose us?</h2>
+                  <p>Elevate your listings with Virtual Staging Wizard. Choose us for expert solutions that captivate buyers and streamline your marketing efforts</p>
+               </div>
+               <div class="row why-choose-us-wrapper">
+                  <div class="col-md-6 mb-3">
+                     <div class="why-choose-us-box d-flex gap-3">
+                        <div class="why-choose-us-box-icon">
+                           <img src="./assets/img/free_icon_1.svg" alt="" />
+                        </div>
+                        <div class="why-choose-us-box-content">
+                           <h3>Lowest price</h3>
+                           <p>Offering the Lowest Prices for High-Quality Virtual Staging Wizard. Experience top-tier service without breaking the bank. Elevate your listings affordably today.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                     <div class="why-choose-us-box d-flex gap-3">
+                        <div class="why-choose-us-box-icon">
+                           <img src="./assets/img/free_icon_1 (1).svg" alt="" />
+                        </div>
+                        <div class="why-choose-us-box-content">
+                           <h3>Fastest turnaround</h3>
+                           <p>
+                              Experience the Fastest Turnaround with Virtual Staging Wizard. Get your listings staged and ready for market in record time. Stay ahead with our swift and efficient
+                              service.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                     <div class="why-choose-us-box d-flex gap-3">
+                        <div class="why-choose-us-box-icon">
+                           <img src="./assets/img/free_icon_1 (2).svg" alt="" />
+                        </div>
+                        <div class="why-choose-us-box-content">
+                           <h3>Decluttering included</h3>
+                           <p>
+                              Enjoy Decluttering Included with Virtual Staging Wizard. Our service not only enhances your listings with virtual staging but also eliminates clutter, ensuring a clean
+                              presentation that entices buyers
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                     <div class="why-choose-us-box d-flex gap-3">
+                        <div class="why-choose-us-box-icon"><img src="./assets/img/revision (1).png" alt="" class= /></div>
+                        <div class="why-choose-us-box-content">
+                           <h3>Unlimited revisions</h3>
+                           <p>
+                              Virtual Staging Wizard offers Unlimited Revisions. Tailor your listings to perfection with endless adjustments until every detail exceeds your expectations. Your vision,
+                              our
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="how-it-work-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2>How it works</h2>
+                  <p>
+                     Discover a seamless process that transforms your spaces with precision and ease. From upload to stunning results , <br />
+                     explore how our innovative technology redefines property presentation.
+                  </p>
+               </div>
+               <div class="row how-it-work-row">
+                  <div class="col-md-4">
+                     <div class="how-it-work-box-wrapper">
+                        <div class="how-it-work-box">
+                           <div class="how-it-work-box-counter">1</div>
+                           <div class="how-it-work-box-content">
+                              <h3>Upload your picture</h3>
+                              <p>Remove existing furniture or select specific items. Choose room type and furniture style for staging: living rooms, bedrooms, kitchens, dining rooms.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="how-it-work-box-wrapper">
+                        <div class="how-it-work-box">
+                           <div class="how-it-work-box-counter">2</div>
+
+                           <div class="how-it-work-box-content">
+                              <h3>AI Magic</h3>
+                              Our AI swiftly analyzes your image, grasping its size and style within seconds. Seamlessly, it adds stunning, lifelike furniture.
+                              <p></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="how-it-work-box-wrapper">
+                        <div class="how-it-work-box">
+                           <div class="how-it-work-box-counter">3</div>
+
+                           <div class="how-it-work-box-content">
+                              <h3>Download and use anywhere</h3>
+                              <p>After processing, instantly access your professionally staged photo. Your staged images are yours to use indefinitely, anywhere you desire..</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="why-virtually-stage">
+            <div class="container">
+               <div class="section-title">
+                  <h2>Why virtually stage?</h2>
+                  <p>
+                     Transform Empty Spaces into Inviting Homes with Virtual Staging. <br />
+                     Boost buyer interest, visualize potential, and streamline sales effortlessly
+                  </p>
+               </div>
+               <div class="row align-items-center">
+                  <div class="col-md-7">
+                     <div class="why-virtually-stage-content-warpper row">
+                        <div class="col-md-6 mb-3">
+                           <div class="why-virtually-stage-content-box">
+                              <div class="why-virtually-stage-content-box-icon">
+                                 <img src="./assets/img/free_icon_1 (3).svg" alt="" />
+                              </div>
+                              <h3>Increased buyer interest</h3>
+                              <p>Elevate Your Listings with Virtual Staging . Experience a surge in interest as our technology enhances your property's appeal, attracting more potential buyers.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                           <div class="why-virtually-stage-content-box">
+                              <div class="why-virtually-stage-content-box-icon">
+                                 <img src="./assets/img/free_icon_1 (4).svg" alt="" />
+                              </div>
+                              <h3>Sell faster</h3>
+                              <p>Elevate Your Listings with Virtual Staging Wizard. Experience faster transactions and increased buyer interest with our advanced staging solutions.</p>
+                           </div>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                           <div class="why-virtually-stage-content-box">
+                              <div class="why-virtually-stage-content-box-icon">
+                                 <img src="./assets/img/free_icon_1 (5).svg" alt="" />
+                              </div>
+                              <h3>Get higher offers</h3>
+                              <p>Experience increased buyer interest and higher offers as our expertly staged visuals showcase your space in its best light.</p>
+                           </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                           <div class="why-virtually-stage-content-box">
+                              <div class="why-virtually-stage-content-box-icon">
+                                 <img src="./assets/img/free_icon_1 (6).svg" alt="" />
+                              </div>
+                              <h3>Outshine Competitors</h3>
+                              <p>Utilize Virtual Staging AI to Showcase Your Spaces with Unmatched Excellence. With our cutting-edge technology.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-5">
+                     <figure class="why-virtually-stage-img">
+                        <img src="./assets/img/virtually-stage-dining-room.jpg" alt="" />
+                     </figure>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="testimonial-section">
+            <div class="container">
+               <div class="section-title">
+                  <h2 class="text-white">What others are saying</h2>
+                  <p class="text-white-50">
+                     Hear What Others Are Saying. Explore Testimonials and Reviews to Learn How Virtual Staging Wizard <br />
+                     is Transforming Property Marketing. Join the Conversation and See the Impact for Yourself.
+                  </p>
+               </div>
+               <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="testimonial-box">
+                           <div class="testimonial-box-content">
+                              <p>Quick, Easy, it works!!!Loved how quick and easy it was to do this. Love that you can just keep refreshing for new furniture if you don’t like the set up.</p>
+                              <h4>Mr Johan</h4>
+                              <span> Texas, US </span>
+                           </div>
+                           <div class="testimonial-box-img">
+                              <img src="./assets/img/234031617-2dfb19ea-01d0-4370-b63b-bb6bdfb4f78e.jpg" alt="" />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonial-box">
+                           <div class="testimonial-box-content">
+                              <p>Quick, Easy, it works!!!Loved how quick and easy it was to do this. Love that you can just keep refreshing for new furniture if you don’t like the set up.</p>
+                              <h4>Sarah Townson</h4>
+                              <span> Texas, US </span>
+                           </div>
+                           <div class="testimonial-box-img">
+                              <img src="./assets/img/239202232-55116c98-5f9a-4b0a-9fdb-4911b52d5ef3.jpg" alt="" />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="testimonial-box">
+                           <div class="testimonial-box-content">
+                              <p>Quick, Easy, it works!!!Loved how quick and easy it was to do this. Love that you can just keep refreshing for new furniture if you don’t like the set up.</p>
+                              <h4>Mr MArk</h4>
+                              <span> Texas, US </span>
+                           </div>
+                           <div class="testimonial-box-img">
+                              <img src="./assets/img/234031646-10533999-39e5-4c7b-ab54-d0299b13ce74.jpg" alt="" />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                  </button>
+               </div>
+            </div>
+         </section>
+         <section class="faq-section" id="faq">
+            <div class="section-title">
+               <h2>Frequently Asked Questions</h2>
+               <p>
+                  Got Questions? We've Got Answers! Dive into our Frequently Asked Questions to Find Quick Solutions and Clarifications. <br />
+                  From How-Tos to Troubleshooting, Navigate Through Common Queries with Ease.
+               </p>
+            </div>
+            <div class="container mx-auto">
+               <div class="accordion pt-3">
+                  <div class="accordion-item">
+                     <button id="accordion-button-1" aria-expanded="false">
+                        <span class="accordion-title">What is virtual staging?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                     </button>
+                     <div class="accordion-content">
+                        <p>
+                           Virtual staging is a cost-effective method for real estate agents to make properties more appealing to potential buyers. Rather than using traditional home staging
+                           techniques, where furniture and decor is physically brought in and arranged, digital technology is used to add furniture, decor and other design elements to a room. This is
+                           done through the use of computer software and 3D rendering, creating a virtual representation of a fully furnished and decorated space. By using virtual staging, real estate
+                           agents can increase the perceived value of a property and make it more attractive to potential buyers by showing them how the space could look when it is fully furnished and
+                           decorated. Additionally, virtual staging can help properties stand out on listing websites by providing visually appealing images that help buyers envision themselves living
+                           in the space
+                        </p>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <button id="accordion-button-2" aria-expanded="false">
+                        <span class="accordion-title">Why should I pick virtual staging over physical staging?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                     </button>
+                     <div class="accordion-content">
+                        <p>
+                           The advantages of virtual staging when it comes to cost savings are quite clear. By eliminating the need to purchase furniture, hire decorators, move in decorations, and
+                           spend time decorating a house for staging, virtual staging can significantly reduce the costs when compared to traditional staging by up to 97%. Moreover, virtual staging
+                           options are more flexible than traditional methods. There are no limits to the styles of furniture that can be added, as virtual furniture can be sourced from anywhere and
+                           added to digital photos. This allows for a much wider range of furniture choices.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="accordion-item">
+                     <button id="accordion-button-3" aria-expanded="false">
+                        <span class="accordion-title">What kind of photos do you support?</span>
+                        <span class="icon" aria-hidden="true"></span>
+                     </button>
+                     <div class="accordion-content">
+                        <p>
+                           AI virtual staging is when an artificial intelligence automatically adds furniture to a photo instead of a human designer. Through our proprietary machine learning models
+                           Virtual Staging AI can add beautiful, realistic looking furniture with natural lighting to any picture of a living or bedroom making AI virtual staging indistinguishable
+                           from human virtual staging or physical home staging. At the same time AI virtual staging is a lot quicker than human virtual staging reducing the wait time from days to
+                           seconds and reducing the cost of virtual staging by magnitudes.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <footer class="footer-section">
+            <div class="container">
+               <div class="text-center copyRight">
+                  <p>© 2024 Virtual Staging Wizard™</p>
+               </div>
+            </div>
+         </footer>
+      </main>
+
+      <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"
+      ></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+      <script>
+         const items = document.querySelectorAll(".accordion button");
+
+         function toggleAccordion() {
+            const itemToggle = this.getAttribute("aria-expanded");
+
+            for (i = 0; i < items.length; i++) {
+               items[i].setAttribute("aria-expanded", "false");
+            }
+
+            if (itemToggle == "false") {
+               this.setAttribute("aria-expanded", "true");
+            }
+         }
+
+         items.forEach((item) => item.addEventListener("click", toggleAccordion));
+      </script>
+   </body>
+</html>
